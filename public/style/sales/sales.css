@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+.SD-generatebtn,
+.PS-generatebtn {
+  display: none;
+}
+
 .SD-div-salesfunction,
 .PS-div-salesfunction,
 .SD-div-totalSales,
