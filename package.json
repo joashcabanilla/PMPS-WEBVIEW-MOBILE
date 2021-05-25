@@ -1,0 +1,29 @@
+{
+  "name": "PMPS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joashcabanilla/PMPS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joashcabanilla/PMPS/issues"
+  },
+  "homepage": "https://github.com/joashcabanilla/PMPS#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "googleapis": "^70.0.0",
+    "nodemailer": "^6.5.0"
+  }
+}
