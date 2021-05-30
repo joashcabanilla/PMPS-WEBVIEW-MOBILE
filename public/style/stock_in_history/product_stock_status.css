@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
-.PSS-generatebtn {
-  display: none;
-}
 .PSS-controlbox {
   height: 10.5rem;
   flex-direction: row;
@@ -42,6 +39,7 @@
   margin-right: 1rem;
 }
 .PSS-generatebtn {
+  display: none;
   margin-right: 0.5rem;
 }
 .PSS-generatebtn,
@@ -106,7 +104,7 @@
   font-weight: bold;
   font-size: 1.1rem;
   text-align: center;
-  background-color: #ffffff;
+  border: 1px solid black;
   width: 15rem;
   margin-bottom: 0.5rem;
 }
@@ -169,7 +167,12 @@
   text-align: left;
   padding: 0.5rem;
 }
-
+.PSS-out_stocks {
+  background-color: #cf352e;
+}
+.PSS-low_stocks {
+  background-color: #f8de7e;
+}
 @media only screen and (min-device-width: 320px) and (max-width: 600px) {
   .PSS-categorytext {
     width: 100%;
@@ -439,7 +442,7 @@
     font-weight: bold;
     font-size: 1.1rem;
     text-align: center;
-    background-color: #ffffff;
+    border: 1px solid black;
     width: 15rem;
     margin-bottom: 0.5rem;
   }
@@ -501,5 +504,11 @@
     background-color: #bbeaff;
     text-align: left;
     padding: 0.5rem;
+  }
+  .PSS-out_stocks {
+    background-color: #cf352e;
+  }
+  .PSS-low_stocks {
+    background-color: #f8de7e;
   }
 }

@@ -24,6 +24,9 @@
     <link rel="stylesheet" href="/style/stock_in_entry/adminAccount.css" />
     <link rel="stylesheet" href="/style/sales/customerAccount.css" />
     <link rel="stylesheet" href="/style/sales/sales.css" />
+    <link rel="stylesheet" href="/style/stock_in_history/discount.css" />
+    <link rel="stylesheet" href="/style/staff/admin_staffproduct.css" />
+    <link rel="stylesheet" href="/style/staff/admin_staffreceipt.css" />
     <link href="/toastnotification/toastr.css" rel="stylesheet"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
@@ -104,7 +107,7 @@
                 <li><a class="stock_in_history">Stock In History</a></li>
                 <li><a class="product_stock_status">Product Stock Status</a></li>
                 <li><a class="pull_out_product">Pull Out Product History</a></li>
-                <li><a class="discountvat">Vat</a></li>
+                <li><a class="discountvat">Vat and Discount</a></li>
               </ul>
             </li>
             <li>
@@ -114,7 +117,6 @@
               <ul class="show-account">
                 <li><a class="staff_account">Staff Account</a></li>
                 <li><a class="admin_account">Admin Account</a></li>
-                <!-- <li><a class="customer_account">Customer Account</a></li> -->
               </ul>
             </li>
             <li>
@@ -126,9 +128,6 @@
                 <li><a class="product_sold">Product Sold</a></li>
               </ul>
             </li>
-            <!-- <li>
-              <a class="online_order">Online Order</a>
-            </li> -->
           </ul>
         </nav>
       </div>
@@ -597,6 +596,42 @@
           </table>
         </div>
       </div>
+      <div class="controlbox Vat-controlbox Discount-controlbox">
+        <p class="Discount-categorytext">Discount</p>
+        <div class="Discount-function">
+          <table class="Discount-table">
+            <tr>
+              <th>Discount</th>
+              <th>Value</th>
+              <th>Button</th>
+            </tr>
+            <tr>
+              <td>SENIOR</td>
+              <td>
+                <p class="senior-pvalue">0</p>
+                <input class="senior-inputvalue" type="number" />
+              </td>
+              <td>
+                <button class="senior-editbtn">EDIT</button>
+                <button class="senior-savebtn">SAVE</button>
+                <button class="senior-cancelbtn">CANCEL</button>
+              </td>
+            </tr>
+            <tr>
+              <td>PWD</td>
+              <td>
+                <p class="pwd-pvalue">0</p>
+                <input class="pwd-inputvalue" type="number" />
+              </td>
+              <td>
+                <button class="pwd-editbtn">EDIT</button>
+                <button class="pwd-savebtn">SAVE</button>
+                <button class="pwd-cancelbtn">CANCEL</button>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
     </div>
 
     <div class="div-function div-StaffAccount">
@@ -932,7 +967,7 @@
         </div>
       </div>
     </div>
-    
+
     <script src="/javascript/admin/datetime.js"></script>
     <script src="/javascript/admin/sidemenu.js"></script>
     <script src="/javascript/admin/productlist.js"></script>
@@ -947,6 +982,8 @@
     <script src="/javascript/stock_in_entry/adminAccount.js"></script>
     <script src="/javascript/sales/customerAccount.js"></script>
     <script src="/javascript/sales/sales.js"></script>
+    <script src="/javascript/stock_in_entry/discount.js"></script>
+    <script src="/javascript/staff/admin_staffproduct.js"></script>
   </body>
 </html>
   
